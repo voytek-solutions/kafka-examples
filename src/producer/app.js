@@ -23,7 +23,7 @@ class Application {
     return new Promise((resolve, reject) => {
       kafkaClient.createTopics(topic, (err, data) => {
         if (err) {
-          console.err('Bootstrap Error', err)
+          console.error('Bootstrap Error', err)
           reject(err)
         }
 
